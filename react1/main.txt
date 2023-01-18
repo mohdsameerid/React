@@ -1,0 +1,27 @@
+What is Emmet?
+=>Emmet is shortcut to right html fast.
+
+Difference between a Library and Framework?
+=>Lib is like bootstrap , you can use the title amount of code of lib you want.
+=>Framework is full fledged thing come with all their things.
+
+What is CDN? Why do we use it?
+=>piece of javascript code. we use react cdn to get all of the thing which we want to use in react.
+
+Why is React known as React?
+=>
+
+What is crossorigin in script tag?
+=>
+
+What is diference between React and ReactDOM?
+=>react contents all the code of core react.
+=>reactDOM contents the code which relates to the DOM.
+
+What is difference between react.development.js and react.production.js files via CDN?
+=>react.development.js is not 
+=>react.production.js is we use our development process completed. its more well written.
+ optimized production versions of React.
+
+What is async and defer?
+=>
