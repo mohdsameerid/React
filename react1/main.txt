@@ -24,4 +24,4 @@ What is difference between react.development.js and react.production.js files vi
  optimized production versions of React.
 
 What is async and defer?
-=>
+=>done in notebook!
