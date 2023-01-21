@@ -2,12 +2,37 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement("h1", { id: "title" } , "Hello Everyone");
-     
-const heading2 = React.createElement("h2", { id: "title" } , "hello React We are Learning ");
+// const heading = React.createElement("h1", { } , "Hello Everyone");
+// const heading2 = React.createElement("h2" , {} , "hello React We are Learning ");
+// const heading3 = React.createElement("h3", {} , "hello React We are Learning ");
+// const container = React.createElement("div" , {class: "title"} , [heading, heading2, heading3]);
 
-const container = React.createElement("div" , {id: "container"} , [heading, heading2]);
+
+// JSX 
+const header = ( 
+    <div className="title">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+    </div>
+);
+
+function Welcome(props){
+    return <h1> Welcome , {props.name}</h1>
+}
+
+const Header2 = () => {
+    return (
+    <div className="title">
+        <Welcome name="Samir" />
+        <Welcome name="Haseen" />
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+    </div>
+    );
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(container);
+root.render(Header2());

@@ -2,7 +2,7 @@
   "name": "react1",
   "version": "1.0.0",
   "description": "this is react app ",
-  "main": "app.js",
+  "main": "index.html",
   "scripts": {
     "test": "jest"
   },
