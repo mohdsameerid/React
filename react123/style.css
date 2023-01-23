@@ -1,0 +1,17 @@
+.title{
+    background-color: yellow;
+}
+.header{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+ul li{
+    margin: 10px;
+    list-style-type: none;
+}
+.menu{
+    display: flex;
+    justify-content:flex-end;
+}
