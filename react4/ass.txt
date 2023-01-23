@@ -1,0 +1,73 @@
+ Is JSX mandatory for React?
+ => No,  We can use React.createElement in the place of jsx.
+    We use jsx for code readibility and its reduces code complexity.
+
+Is ES6 mandatory for React?
+=> No, it is not mandatory, but it is recommendable.
+   react rely alot on ES6. React uses alot of cool features of ES6
+   like Classes, arrow function, let/const variables.
+
+{TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX?
+=>  {TitleComponent} behave like a react Element or variable inside curly braces {}.
+    {<TitleComponent/>} - returning some JSX value
+    {<TitleComponent></TitleComponent>} - it is equivalent to {<TitleComponent/>} if there is no children.
+
+How can I write comments in JSX?
+=> //  for single line
+   /*
+   *   for multilne 
+   */
+
+What is <React.Fragment></React.Fragment> and <></>?
+=>  It allows you to return multiple elements from a React component by wrapping without any extra node to the DOM.
+      Difference between <React.Fragment></React.Fragment> and <></> is only shorthand does not support key attribute.
+
+What is Reconciliation in React?
+=> Reconciliation is the process through which React updates the Browser DOM and makes React work faster. 
+      React use a diffing algorithm so that component updates are predictable and faster. React would first calculate
+      the difference between the real DOM and the copy of DOM (Virtual DOM) when there's an update of components. 
+      React stores a copy of Browser DOM which is called Virtual DOM. When we make changes or add data, React creates
+      a new Virtual DOM and compares it with the previous one. Comparison is done by Diffing Algorithm. React compares
+      the Virtual DOM with Real DOM. It finds out the changed nodes and updates only the changed nodes in Real DOM 
+      leaving the rest nodes as it is. This process is called Reconciliation.
+
+What is React Fiber?
+=> React Fiber is a concept of ReactJS that is used to render a system faster, smoother and smarter. 
+      The Fiber reconciler, which became the default reconciler for React 16 and above, is a complete rewrite 
+      of React’s reconciliation algorithm to solve some long-standing issues in React. Because Fiber is asynchronous, 
+      React can:
+
+      * Pause, resume, and restart rendering work on components as new updates come in
+      * Reuse previously completed work and even abort it if not needed
+      * Split work into chunks and prioritize tasks based on importance           
+
+
+ Why do we need keys in React?
+ => A key is a special attribute you need to include when creating lists of elements in React. Keys are used in 
+      React to identify which items in the list are changed, updated, or deleted. In other words, we can say that 
+      keys are unique Identifier used to give an identity to the elements in the lists. Keys should be given to 
+      the elements within the array to give the elements a stable identity.
+
+
+ Q9:   Can we use index as keys in React?
+Ans:  Yes, we can use the index as keys, but it is not considered as a good practice to use them because if the order
+      of items may change. This can negatively impact performance and may cause issues with component state. Keys are
+      taken from each object which is being rendered. There might be a possibility that if we modify the incoming data
+      react may render them in unusual order.
+
+Q10:  What is props in React? Ways to.
+Ans:  Props are the properties in React. We pass this properties from parent component to child component. Props carries
+      the data to make component more dynamic.
+
+Q11:  What is Config Driven UI?
+Ans:  Config Driven UI care based on the configurations of the data application receives. It makes UI more dynamic,
+      also control what to show on UI or not. UI will be shown on the basis of configurations that is received.
+
+Q12:  Difference between Virtual DOM and Real DOM?
+Ans:  Real DOM                                                Virtual DOM
+    * DOM manipulation is very expensive                  * DOM manipulation is very easy
+    * There is too much memory wastage                    * No memory wastage
+    * It updates Slow                                     * It updates fast
+    * It can directly update HTML                         * It can’t update HTML directly
+    * Creates a new DOM if the element updates.           * Update the only JSX if that element updates
+    * It represents the Ul of your application            * It is only a virtual representation of the DOM          
