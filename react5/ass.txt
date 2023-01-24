@@ -1,0 +1,59 @@
+Q1.   What is difference between Named Export, Default export and * as export?
+Ans:  ES6 provides us to import & export a module and use it in other files. ES6 has two ways to export a file.
+      1. named export: if your JS file has multiple function, and you marked every funtion as individual export
+         then the way of exporting is called named export.
+         for eg: 
+         export const MyComponent = () => {}
+         export const MyComponent2 = () => {}
+         export const MyComponent3 = () => {}
+
+         // ex. importing a single named export
+        import { MyComponent } from "./xyz";
+
+        // ex. importing multiple named exports
+        import { MyComponent, MyComponent2 } from "./xyz"; ------ named export
+
+        you can import all function using * in the component.
+        eg:
+         export const MyComponent = () => {}
+         export const MyComponent2 = () => {}
+         export const MyComponent3 = () => {}
+
+         Now we can use import them in component like below mentioned:
+
+        import * as MainComponents from "./xyz";
+        
+        <MainComponents.MyComponent />
+        <MainComponents.MyComponent2 />
+        <MainComponents.MyComponent3 />
+
+      2. default export: if your JS file has single function which you want export, and you can marked that single
+         funtion as default export, and that component can have only one default export.
+         eg:
+         const MyComponent = () => {}
+         export default MyComponent;
+
+         // ex. importing a default component
+        import  MyComponent  from "./xyz";
+
+
+
+Q2.   What is the importance of config.js?
+Ans:  config.js files are essentially used for application configuration. eg: we need to store
+      keys which we used in multiple places across application, so to avoid mistakes, we keep that information
+      in config file.
+
+
+Q3.   What are React hooks?
+Ans:  In React 16.8, React has introduced new pattern called React hooks. React hooks is just normal JS function
+      which help to reuse stateful logic functional component.
+      React hooks examples are:
+      useState, useEffect, useCallback,useRef,useMemo,useReducer.
+
+
+Q4.   Why do we need a useState Hook?
+Ans:  useState is a state variable which maintain state in React application. useState function takes a single 
+      argument as initial state and returns an array of two entries.first, value of state and second, method to
+      set the value.
+      Syntax:
+      const [state,setState] = useState();      
