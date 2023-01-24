@@ -1,0 +1,24 @@
+Q1:   What is Microservice?
+Ans:  Microservice is an approach to building an application trhat breaks functionality into modular components.
+      Features
+      1. single responsibility
+      2. Individual engineering team can manage and deploy
+      3. SOC
+
+Q2:   What is Monolith architecture?
+Ans:  Monolith architecture means every feature and functionality of an application tightly coupled. Each component
+      dependant on each other.      
+
+Q3    What is Difference between Monolith and Microservice?
+Ans   Monolithic                                               Microservices
+   1. Monolithic architecture is built as one large system     Microservices architecture is built as small independent
+      and is usually one code-base.                            module based on business functionality
+   2. It is not easy to scale based on demand                  It is easy to scale based on demand.
+   3. It has shared database                                   Each project and module has their own database
+   4. Everything is tightly coupled and depend on each other   Every module and project is independent
+
+Q4    Why do we need a useEffect Hook?
+Ans:  React component needs to do something after initial render. It is mostly used for tasks like updating the DOM, 
+      fetching data from API end-points, setting up subscriptions or timers, etc can be lead to unwarranted side-effects.
+
+
