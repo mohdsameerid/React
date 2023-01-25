@@ -21,4 +21,56 @@ Q4    Why do we need a useEffect Hook?
 Ans:  React component needs to do something after initial render. It is mostly used for tasks like updating the DOM, 
       fetching data from API end-points, setting up subscriptions or timers, etc can be lead to unwarranted side-effects.
 
+Q5:   What is Optional Chaining?
+Ans:  JS knows to implicitly check to be sure object is not null or undefined before attempting to access it. 
+      If object is null or undefined, the expression automatically short-circuits, returning undefined. Basically we 
+      use it for null checks.
 
+Q6:   What is Shimmer UI?
+Ans:  A shimmer UI resembles the page's actual empty boxes structured UI, so users will understand how quickly the 
+      web or mobile app will load even before the content has shown up. It gives people an idea of what's about to 
+      come and what's happening (it's currently loading) when a page full of content/data takes more than 300-500ms 
+      to load.
+
+Q7:   What is the Difference between JS expression and JS statement?
+Ans:  statements are the rigid structure that holds our program together, while expressions fill in the details.
+      Statements often have "slots" for expressions. We can put any expression we like into those slots
+      For example, declaring a variable has an expression slot:
+
+      let hi = /* some expression */;
+
+      We can use any of the expressions:
+
+      let hi = 1;
+      let hi = "hello";
+      let hi = 5 * 10;
+      let hi = num > 100;
+      let hi = isHappy ? "🙂" : "🙁";
+      let hi = [1, 2, 3].pop();
+
+      Expressions produce a value, and that value will be passed into the function. Statements don't produce 
+      a value, and so they can't be used as function arguments.      
+
+Q8:   What is Conditional Rendering, explain with a code example?
+Ans:  Conditional rendering is a term to describe the ability to render different user interface (UI) markup 
+      if a condition is true or false.
+      For example, If we have load any api data in UI then it takes time to fetch API data, till then we can show 
+      Shimmer or Loader and once the data is fetched, we can display it.
+      
+      import Shimmer from "./Shimmer";
+      import Body from "./Body";
+
+      {
+         ( isLoading ) ? <Shimmer/> : <Body />
+      }
+
+Q9:   What is CORS?
+Ans:  Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate 
+      any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
+
+
+Q10:  What is async and await?
+
+
+
+Q11:  What is the use of const json = await data.json(); ?
