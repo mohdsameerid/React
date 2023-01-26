@@ -74,3 +74,33 @@ Q10:  What is async and await?
 
 
 Q11:  What is the use of const json = await data.json(); ?
+
+
+
+Q12: Made an Counter?
+
+import React, { useState } from "react";
+
+const Footer = () => {
+    const[counter, setCounter] = useState(0);
+
+    function Increment(){
+        // counter = counter + 1;
+        setCounter(counter+1);
+    }
+    function Decrement(){
+        // counter = counter + 1;
+        if(counter > 0)
+        setCounter(counter-1);
+    }
+
+    return (
+        <>
+        <button onClick={  Increment }>Plus me</button>
+        <h1> {counter} </h1> 
+        <button onClick={  Decrement }>Minus me</button>
+        </>
+        
+    );
+}
+export default Footer;
