@@ -1,0 +1,45 @@
+Q1:   What are various ways to add images into our App? Explain with code examples
+Ans:  Using img tag: 
+      1. Set the src that is url or thr path of the image and alt attribute.
+      eg: <img src="https://reactjs.org/logo-og.png" alt="React Image" />
+
+      Setting a background image:
+      Using CSS you can set the background of any element. This is most use when 
+      you want to display content over the image.
+      eg:   .app {
+                background-image: url(https://reactjs.org/logo-og.png);
+             }
+      
+      With the <img/> tag:
+      Drag your image into your project and import it into the desired component. 
+      Afterward, you can insert the name of the import into the source property.
+      eg: 
+      import reactLogo from "./reactLogo.png";
+
+      export default function App() {
+        return <img src={reactLogo} alt="react logo" />
+      }
+
+      Inserting a local background image:
+      Just like before you would import the image. Then you would insert it using CSS 
+      URL(…) or using inline styling as shown below.
+      eg: 
+      import reactLogo from './reactLogo.png'
+
+      export default function App() {
+         return <div style={{ backgroundImage: reactLogo }}>Overlay text</div>
+      }
+
+Q2:   What would happen if we do console.log(useState())?
+Ans:  It will return an array of length 2. First is default value passed to 
+      useState via argument, and second will be a function.
+
+Q3:   How will useEffect behave if don't add a dependency array?
+Ans:  useEffect will trigger after every render, if we don't pass dependency array.
+
+Q4:   What is SPA?
+Ans:  SPA stands for Single page application. SPA is a implementation of web application that
+      load a single web document. It allows user to route the page without reloading the whole 
+      web page.
+
+
