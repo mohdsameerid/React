@@ -51,6 +51,9 @@ Ans:  Two phase in React Class Based component.
     Leave the Page              |                     |        Unmounting
 
 
+Link for React Life cycle diagram:
+  https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
 
 Q4:   Why do we use componentDidMount?  
 Ans:  we use componentDidMount method to call api after render method.  
