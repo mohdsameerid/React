@@ -1,0 +1,25 @@
+Q1:   Explore all the ways of writing css
+Ans:  1) using class name or Native css.
+      2) SCSS or SASS
+      3) using inline
+      4)using library (Taileind css, Material UI, Ant Design, Chakra UI, Base UI).
+      5) Styled Component.
+
+Q2:   How do we configure tailwind?
+Ans:  Check it out this page: https://tailwindcss.com/docs/installation
+
+Q3:   In tailwind.config.js, what does all the keys mean (content,theme,extend,plugins)?
+Ans:  content-  this section, where your configure the path of html, js, tsx, jsx that contains
+      tailwind class names
+      theme-  where you define your projects color pelette,type scale, fonts, breakpoints, border
+      radius values.
+      extend- if you want to preserve default values for a theme option but also want to add new values
+      then add your extension under the extend key
+      plugins-  this section allow you to register the plugins  with tailwind that can be used to generate
+      extra  utilities, components, base styles or custom variants.
+
+Q4:   Why do we have .postcssrc file?
+Ans:  Parcel or bundler takes this configuration from this file while bundlings up and compile twailwind
+      css into nromal css.
+      
+            
